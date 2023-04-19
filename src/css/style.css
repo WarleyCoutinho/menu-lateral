@@ -1,0 +1,106 @@
+:root {
+  --menu-size: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: hsl(130, 100%, 44%);
+  background: -webkit-linear-gradient(
+    to left,
+    hsl(237, 93%, 77%),
+    hsl(130, 100%, 44%)
+  );
+  background: linear-gradient(to left, hsl(237, 93%, 77%), hsl(130, 100%, 44%));
+}
+
+header {
+  background: hsla(0, 0%, 0%, 0.3);
+  padding: 10px;
+  text-align: center;
+}
+p {
+  color: hsl(0, 0%, 100%);
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#btnMenu {
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+#btnMenu:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: hsl(223, 41%, 27%);
+}
+
+#btnMenu:active {
+  background-color: hsl(225, 40%, 2%);
+}
+
+#btnClose {
+  padding: 8px;
+  background-color: hsl(0, 36%, 23%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#btnClose:active {
+  background-color: hsl(0, 35%, 44%);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: var(--menu-size);
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: block;
+}
+
+.menu ul li a {
+  transition: background 0.3s;
+  display: block;
+  color: hsl(0, 0%, 100%);
+  font-size: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+  background-color: hsl(232, 27%, 26%);
+}
+
+.effect {
+  transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+  #btnClose {
+    display: none;
+  }
+}

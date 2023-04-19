@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu animado</title>
+
+    <link rel="preload" href="src/css/style.css" as="style" />
+    <link rel="preload" href="src/js/main.js" as="script" />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="src/assets/img/menu.png"
+        width="60px"
+        alt="Clique para abrir ou fechar o menu"
+        id="btnMenu"
+      />
+    </header>
+
+    <div class="content">
+      <p>
+        “Se estamos vivos, é para o Senhor que vivemos; se morremos, é para o
+        Senhor que morremos. Portanto, vivos ou mortos, pertencemos ao Senhor.
+        Cristo morreu e ressuscitou exatamente para isto, para ser Senhor dos
+        mortos e dos vivos” (Rm 14, 7-9).
+      </p>
+    </div>
+
+    <div id="menu" class="menu effect">
+      <nav>
+        <div style="text-align: right">
+          <button id="btnClose">X</button>
+        </div>
+        <ul>
+          <li><a href="#">Família</a></li>
+          <li><a href="#">Warley Coutinho</a></li>
+          <li><a href="#">Cleude Coutino</a></li>
+          <li><a href="#">Italo Yan</a></li>
+          <li><a href="#">Victo Hugo</a></li>
+          <li><a href="#">Deus e Jesus Cristo</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
