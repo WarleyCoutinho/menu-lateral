@@ -6,4 +6,4 @@ Criando um menu lateral para mais aprendizagem com a linguagem javaScript, html 
 
 # Link-service
 
-🤓👉 [Clique aqui para ver o projeto](https://) 👈🤓
+🤓👉 [Clique aqui para ver o projeto](https://menu-lateral-nine.vercel.app/) 👈🤓
